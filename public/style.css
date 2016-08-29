@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body, html {
+    height: 100%;
+    font-family: Quicksand;
+}
+
+nav.navbar {
+  background: none;
+  border: none;
+}
+
+.navbar-default .navbar-nav>li {
+  text-align: center;
+  font-size: 5vh;
+  background: radial-gradient(#C8D5DE,transparent);
+  border-radius: 10px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+nav.shrink .navbar-nav>li>a {
+  font-size: 2vh;
+  margin-top: -1vh;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+nav.shrink .navbar-nav>li {
+  vertical-align: top;
+  height: 6vh;
+}
+
+.parallax {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first {
+  background-image: url('images/dunes.jpg');
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+
+#about {
+  background-image: url('images/kili.jpg');
+}
+
+#projects {
+  background-image: url('images/valley.jpg');
+}
+
+#contact {
+  background-image: url('images/amboseli.jpg');
+}
+
+h1 {
+  position: absolute;
+  margin-top: 40vh;
+  width: 100%;
+  color: white;
+  font-family: Quicksand;
+  font-size: 20vh;
+}
+
+.first span {
+  position: absolute;
+  font-size: 20vh;
+  margin-left: -10vh;
+  top: 80vh;
+}
