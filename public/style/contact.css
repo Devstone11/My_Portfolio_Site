@@ -1,0 +1,27 @@
+#contact {
+}
+
+.contact-card {
+  height: 30vw;
+  width: 30vw;
+  margin: 0 auto;
+  padding-top: 20vh;
+  color: white;
+}
+
+.contact-card h2 {
+  padding-bottom: 2vw;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-card a:hover {
+  color: black;
+}
+
+.contact-card table {
+  margin-left: 3vw;
+}

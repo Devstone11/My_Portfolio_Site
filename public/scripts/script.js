@@ -1,0 +1,52 @@
+var projects = [
+  {
+    title: 'Bubble Trouble',
+    gif: '../images/BubbleTroubleGif.gif',
+    description: 'An addictive game built for mobile - pop as many bubbles as you can before the timer runs out! Built using Unity, C#, and Xcode.',
+    url: 'https://bubble-trouble-61c5c.firebaseapp.com/#/'
+  },
+  {
+    title: 'BounceAround',
+    gif: '../images/BounceAroundGif.gif',
+    description: 'Plan the itinerary for your upcoming trip using a map of local restaurants/attractions. Built with Node.js, Express, PostgreSQL, Bootstrap, OAuth, and Google APIs.',
+    url: 'https://bouncearound.herokuapp.com/'
+  },
+  {
+    title: 'Candidate Watch 2016',
+    gif: '../images/CandidateWatchGif.gif',
+    description: 'Get a side-by-side comparison of the social media and news coverage of your presidential candidates and your congress members. Built with JavaScript, jQuery, custom CSS, Facebook and Twitter embedding, and several news APIs.',
+    url: 'https://candidate-watch.firebaseapp.com/'
+  }
+];
+
+$(document).ready(function (){
+  $("#about-link").click(function (){
+    $(window).scrollTo($("#about"), 800);
+  });
+
+  $("#down-arrow").click(function (){
+    $(window).scrollTo($("#about"), 800);
+  });
+
+  $("#projects-link").click(function (){
+    $(window).scrollTo($("#projects"), 800);
+  });
+
+  $("#contact-link").click(function (){
+    $(window).scrollTo($("#contact"), 800);
+  });
+
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 500) {
+      $('nav').addClass('shrink');
+    } else {
+      $('nav').removeClass('shrink');
+    }
+  });
+  $('#projContainer').append("<div class='project'><h3 class='projTitle'><a href=" + projects[0].url + " target='_blank'>" + projects[0].title + "</a></h3><img class='projGifBubble' src=" + projects[0].gif + " alt='No image available'/><div class='projDescription'>" + projects[0].description + "</div></div>");
+  for (var i = 1; i < projects.length; i++) {
+    $('#projContainer').append("<div class='project'><h3 class='projTitle'><a href=" + projects[i].url + " target='_blank'>" + projects[i].title + "</a></h3><img class='projGif' src=" + projects[i].gif + " alt='No image available'/><div class='projDescription'>" + projects[i].description + "</div></div>");
+  }
+
+
+});

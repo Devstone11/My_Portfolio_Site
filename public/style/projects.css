@@ -1,0 +1,60 @@
+.projDescription {
+  padding: 1vw;
+  /*font-size: 1.3vw;*/
+}
+
+@media (max-width: 1000px) {
+  #projects {
+    height: 190%;
+  }
+}
+
+#projHeader {
+  background: radial-gradient(#659CDD,transparent);
+}
+
+#projContainer {
+  width: 94%;
+  margin: 0 auto;
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 40%;
+  min-width: 400px;
+  text-align: center;
+  padding: 1%;
+  margin-top: 3vh;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.projTitle {
+  margin: 0;
+  padding: 1vw;
+  /*font-size: 2vw;*/
+}
+
+.projTitle a {
+  color: black;
+  text-decoration: none;
+}
+
+.projTitle a:hover {
+  color: white;
+}
+
+.projGifBubble {
+  width: 10vw;
+  padding: 1vw;
+}
+
+.projGif {
+  width: 30vw;
+  padding: 1vw;
+};
