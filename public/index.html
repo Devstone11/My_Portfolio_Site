@@ -2,13 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <!-- <meta name="viewport" content="initial-scale=1.0"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/projects.css">
     <link rel="stylesheet" href="style/contact.css">
     <link rel="icon" href="images/icon.png">
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts/script.js" type="text/javascript"></script>
     <title>Devin Stone</title>
   </head>
   <body>
@@ -16,7 +23,7 @@
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -25,7 +32,7 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse row" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse row" id="navbar-collapse">
           <ul class="nav navbar-nav col-sm-12 row">
             <li class="col-sm-3" id="about-link"><a>About</a></li>
             <li class="col-sm-3" id="projects-link"><a>Projects</a></li>
@@ -36,12 +43,17 @@
       </div><!-- /.container-fluid -->
     </nav>
     <div class="parallax first container-fluid">
-      <div class="black"></div>
-      <h1 class="row">Devin Stone</h1>
+      <div class="row name">
+        <h1 class="row">Devin Stone</h1>
+      </div>
+
       <h3 class="row tagline">
         <span>Learner.</span>
         <span>Web Developer.</span>
         <span>Creator.</span>
+        <!-- <span class="col-sm-4">Learner.</span>
+        <span class="col-sm-4">Web Developer.</span>
+        <span class="col-sm-4">Creator.</span> -->
       </h3>
       <a><span class="glyphicon glyphicon-triangle-bottom" id="down-arrow"></span></a>
     </div>
@@ -50,7 +62,7 @@
         <div class="aboutDevin">
           <h2>About:</h2>
           <div>I'm a web developer with an insatiable curiosity and passion for learning new technologies and skills. I love taking on new projects and researching the most efficient and effective ways to create the best possible products that are exciting, useful, and user-friendly.</div>
-          <div>Before entering the tech scene, I worked in the world of non-profits for three years as a database administrator, staff director, budget planner, and event coordinator. In my spare time, I enjoy sight-reading on the piano, dominating the world in the Game of Risk, and perfecting the recipe of the ultimate margarita.</div>
+          <div>Before entering the tech scene, I worked in the world of non-profits for three years as a database administrator, staff director, budget planner, and event coordinator. In my spare time, I enjoy sight-reading on the piano, dominating the world in the Game of Risk, and perfecting the recipe for the ultimate margarita.</div>
           <div>I'm graduating from the Galvanize Web Development Immersive in October 2016 and currently looking for an opportunity to work with a company that values creative solutions, happy employees, and making a positive impact on the world.</div>
         </div>
         <div class="aboutTech">
@@ -114,7 +126,6 @@
                 <td></td>
                 <td>Heroku</td>
               </tr>
-
             </tbody>
           </table>
         </div>
@@ -126,11 +137,11 @@
     </div>
     <div class="parallax" id="contact">
       <div class="contact-card">
-        <h2>Contact</h2>
+        <h2>Contact:</h2>
         <table>
           <tr>
             <td>Email: </td>
-            <td><a href="devstone11@gmail.com">devstone11@gmail.com</a></td>
+            <td><a href="mailto:devstone11@gmail.com">devstone11@gmail.com</a></td>
           </tr>
           <tr>
             <td>Linkedin: </td>
@@ -148,10 +159,6 @@
       </div>
     </div>
 
+
   </body>
-  <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
-  <script src="scripts/script.js" type="text/javascript"></script>
 </html>

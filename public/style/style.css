@@ -48,27 +48,32 @@ nav.shrink .navbar-nav>li {
 }
 
 .parallax {
-  height: 100%;
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
+  overflow: scroll;
+  box-shadow: 0px 0px 20px black;
+
 }
 
 .first {
   background-image: url('../images/dunes.jpg');
   position: relative;
   text-align: center;
+
 }
 
 #about {
-  background-image: url('../images/kili.jpg');
+  background-image: url('../images/amboseli.jpg');
 }
 
 #projects {
   background-image: url('../images/valley.jpg');
   height: 165%;
+
 }
 
 #extra {
@@ -76,7 +81,7 @@ nav.shrink .navbar-nav>li {
 }
 
 #contact {
-  background-image: url('../images/amboseli.jpg');
+  background-image: url('../images/kili.jpg');
 }
 
 h1, .tagline {
@@ -89,6 +94,10 @@ h1, .tagline {
 h1 {
   margin-top: 35vh;
   font-size: 10vw;
+}
+
+.navbar-nav li {
+  background: radial-gradient(#red,transparent);
 }
 
 h2 {
@@ -105,7 +114,7 @@ h2 {
 }
 
 .tagline span {
-  margin-left: 3vw;
+  /*margin-left: 3vw;*/
 }
 
 .glyphicon {

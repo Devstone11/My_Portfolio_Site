@@ -16,10 +16,21 @@ var projects = [
     gif: '../images/CandidateWatchGif.gif',
     description: 'Get a side-by-side comparison of the social media and news coverage of your presidential candidates and your congress members. Built with JavaScript, jQuery, custom CSS, Facebook and Twitter embedding, and several news APIs.',
     url: 'https://candidate-watch.firebaseapp.com/'
+  },
+  {
+    title: 'Pok&eacutemon Node',
+    gif: '../images/PokemonNode.gif',
+    description: 'Create pokemon, assign them to trainers, and battle them in a gym! This app is a CRUD database showcase using Node.js, Knex.js, Express, and PostgreSQL.',
+    url: 'https://pokemon-node.herokuapp.com/'
   }
 ];
 
 $(document).ready(function (){
+
+  $(".collapsed").click(function() {
+    $(".navbar-collapse").toggle('hide');
+  });
+
   $("#about-link").click(function (){
     $(window).scrollTo($("#about"), 800);
   });
@@ -43,9 +54,10 @@ $(document).ready(function (){
       $('nav').removeClass('shrink');
     }
   });
-  $('#projContainer').append("<div class='project'><h3 class='projTitle'><a href=" + projects[0].url + " target='_blank'>" + projects[0].title + "</a></h3><img class='projGifBubble' src=" + projects[0].gif + " alt='No image available'/><div class='projDescription'>" + projects[0].description + "</div></div>");
+  $('#projContainer').append("<div class='project'><h3 class='projTitle'><a href=" + projects[0].url + " target='_blank'>" + projects[0].title + "</a></h3><a href=" + projects[0].url + " target='_blank'><img class='projGifBubble' src=" + projects[0].gif + " alt='No image available'/></a><div class='projDescription'>" + projects[0].description + "</div></div>");
   for (var i = 1; i < projects.length; i++) {
-    $('#projContainer').append("<div class='project'><h3 class='projTitle'><a href=" + projects[i].url + " target='_blank'>" + projects[i].title + "</a></h3><img class='projGif' src=" + projects[i].gif + " alt='No image available'/><div class='projDescription'>" + projects[i].description + "</div></div>");
+    // $('#projContainer').append("<div class='project'><h3 class='projTitle'><a href=" + projects[i].url + " target='_blank'>" + projects[i].title + "</a></h3><img class='projGif' src=" + projects[i].gif + " alt='No image available'/><div class='projDescription'>" + projects[i].description + "</div></div>");
+    $('#projContainer').append("<div class='project'><h3 class='projTitle'><a href=" + projects[i].url + " target='_blank'>" + projects[i].title + "</a></h3><a href=" + projects[i].url + " target='_blank'><img class='projGif' src=" + projects[i].gif + " alt='No image available'/></a><div class='projDescription'>" + projects[i].description + "</div></div>");
   }
 
 

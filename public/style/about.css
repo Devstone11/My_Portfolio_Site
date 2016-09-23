@@ -2,17 +2,20 @@
 @media (max-width: 890px) {
   #about {
     height: 175%;
+    max-height: 870px;
+    /*height: %;*/
   }
 }
+
 
 #aboutContainer {
   width: 94%;
   margin: 0 auto;
   padding: 2%;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
 }
 
 #aboutContainer h2 {
@@ -29,7 +32,7 @@
 .aboutDevin, .aboutTech {
   background-color: rgba(255, 255, 255, 0.8);
   width: 45%;
-  min-width: 400px;
+  min-width: 350px;
   border-radius: 10px;
   display: inline-block;
   margin-top: 2vw;
@@ -40,10 +43,23 @@
   padding-top: 1vw;
 }
 
+.aboutTech {
+  min-width: 500px;
+}
+
 th, td {
   padding-left: 1vw;
 }
 
 th {
   border-bottom: 1px black solid;
+}
+
+@media (max-width: 400px) {
+  #about {
+    height: 125%;
+  }
+  .aboutTech {
+    min-width: 350px;
+  }
 }
