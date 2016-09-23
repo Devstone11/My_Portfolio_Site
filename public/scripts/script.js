@@ -18,6 +18,12 @@ var projects = [
     url: 'https://candidate-watch.firebaseapp.com/'
   },
   {
+    title: 'Shake Shop',
+    gif: '../images/ShakeShopGif.gif',
+    description: 'A shopping cart app built with AngularJS. Filter through your milkshake choices, add them to your cart, and view the cart for your order total!',
+    url: 'https://shake-shop.firebaseapp.com/'
+  },
+  {
     title: 'Pok&eacutemon Node',
     gif: '../images/PokemonNode.gif',
     description: 'Create pokemon, assign them to trainers, and battle them in a gym! This app is a CRUD database showcase using Node.js, Knex.js, Express, and PostgreSQL.',

@@ -124,3 +124,9 @@ h2 {
   top: 80vh;
   color: white;
 }
+
+@media (max-width: 415px) {
+  #resume-link {
+    display: none;
+  }
+}
