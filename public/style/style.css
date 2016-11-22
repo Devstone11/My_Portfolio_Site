@@ -67,13 +67,12 @@ nav.shrink .navbar-nav>li {
 }
 
 #about {
-  background-image: url('../images/valley.jpg');
+  background-image: url('../images/whiteboard.JPG');
 }
 
 #projects {
   background-image: url('../images/code.png');
   height: 165%;
-
 }
 
 #extra {
